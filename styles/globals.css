@@ -1,0 +1,64 @@
+/* styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基础样式 */
+body {
+  @apply text-gray-800;
+}
+
+/* 响应式文本大小 */
+@layer base {
+  h1 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+  h2 {
+    @apply text-lg md:text-xl font-semibold;
+  }
+  h3 {
+    @apply text-base md:text-lg font-medium;
+  }
+  p {
+    @apply text-sm md:text-base;
+  }
+}
+
+/* 简历内容样式 */
+.resume-content {
+  @apply space-y-4 md:space-y-6;
+}
+
+/* 文本自动换行 */
+.text-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .section {
+    @apply py-4;
+  }
+
+  /* 确保长文本在移动端正确换行 */
+  .long-text {
+    @apply break-words;
+  }
+}
+
+/* 可选：添加打印样式 */
+@media print {
+  body {
+    @apply bg-white;
+  }
+  
+  .no-print {
+    display: none;
+  }
+}
