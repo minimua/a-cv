@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 个人简历生成器
 
-## Getting Started
+一个使用 Next.js 和 Tailwind CSS 构建的现代简历应用，支持响应式设计，提供简洁优雅的视觉效果。
 
-First, run the development server:
+## 在线预览
+
+[https://resume-builder.vercel.app](https://resume-builder.vercel.app)
+
+## 特性
+
+- 🎨 现代简约的设计风格
+- 📱 完全响应式布局
+- ⚡️ 快速的页面加载速度
+- 🛠 易于个性化定制
+- 📦 组件化开发
+- 🚀 一键部署到 Vercel
+
+## 技术栈
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+
+## 本地开发
+
+1. 克隆项目
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/resume-builder.git
+cd resume-builder
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. 安装依赖
+```bash
+npm install
+# 或
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. 启动开发服务器
+```bash
+npm run dev
+# 或
+yarn dev
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+4. 打开 http://localhost:3000 查看效果
+# 自定义内容
+1. 个人信息配置
+编辑 data/resume.ts 文件
+修改个人信息、工作经历、教育经历等内容
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ 
+# 部署
+## Vercel 部署
+1. Fork 此仓库
+2. 在 Vercel 注册账号
+3. 从 Github 导入项目
+4. 点击部署即可
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+许可证
+MIT License
