@@ -11,11 +11,11 @@ interface ResumeProps {
 }
 
 export default function Resume({ data }: ResumeProps) {
-  const { basics, skills, work, projects, education } = data;
+  const { basics, work, projects, education } = data;
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8"> {/* 添加背景色和内边距 */}
-      <div className="max-w-4xl mx-auto px-6 py-8 bg-white rounded-lg shadow-md"> {/* 添加 rounded-lg 和 shadow-md */}
+    <div className="min-h-screen bg-gray-100 p-8">  
+      <div className="max-w-4xl mx-auto px-6 py-8 bg-white rounded-lg shadow-md">  
         <Header basics={basics} />
         <main className="space-y-6">
           <Skills skills={resumeData.skills} />

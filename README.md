@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-[https://resume-builder.vercel.app](https://resume-builder.vercel.app)
+[https://cv.voidmu.com](https://cv.voidmu.com)
 
 ## 特性
 
