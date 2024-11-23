@@ -4,13 +4,11 @@ import Skills from './Skills';
 import Work from './Work';
 import Projects from './Projects';
 import Education from './Education';
-import resumeData from '@/data/resume';
 
 interface ResumeProps {
   data: ResumeData;
 }
 
-// pages/index.tsx 或 components/Resume.tsx
 
 export default function Resume({ data }: ResumeProps) {
   const { basics, skills, work, projects, education } = data;

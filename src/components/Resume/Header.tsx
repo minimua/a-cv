@@ -1,5 +1,5 @@
 import { Basics } from '@/types/resume';
-import { Mail, Phone, MapPin, User } from 'lucide-react'; 
+import { Mail, Phone, MapPin } from 'lucide-react'; 
 
 interface HeaderProps {
   basics: Basics;
