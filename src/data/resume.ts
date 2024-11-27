@@ -9,7 +9,12 @@ export const resumeData: ResumeData = {
     phone: "15093063219",
     location: "杭州",
     summary: "具有扎实的Java基础知识和丰富的微服务项目开发经验，熟练掌握Spring全家桶，对数据库、中间件等技术有深入了解，拥有良好的代码习惯和团队协作能力。",
-    profiles: []
+    profiles: [ 
+      {
+      network: "GitHub",
+      url: "https://github.com/minimua"
+      }
+  ]
   },
   skills: [
     "掌握Java基础知识，如集合框架，I/O，多线程和AQS等，阅读过ArrayList，HashMap源码",
@@ -142,6 +147,58 @@ export const resumeData: ResumeData = {
         "分析并实现物流相关业务需求，负责物流管理及付款流程的优化与完善",
         "开发亚马逊商品的销量与库存统计功能，支持多维度数据查询与导出",
         "通过XXL-JOB管理定时任务，实现销量、库存及调拨单的自动化同步，确保系统数据的实时更新与准确性"
+      ]
+    },
+    {
+      name: "a-nav导航站",
+      link: "https://anav.voidmu.com/",
+      company: "开源项目",
+      duration: "2024-09 - ⾄今",
+      description: "a-nav是⼀个使⽤Next.js结合Notion API构建的现代导航⽹站，使⽤ Notion 作为 CMS，轻松管理导航内容，⽀持⼀键部署，旨在为⽤户提供灵活且易于使⽤的导航解决⽅案。",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Notion API"
+      ],
+      responsibilities: [
+        
+      ]
+    },
+    {
+      name: "a-cv在线简历",
+      link: "https://cv.voidmu.com/",
+      company: "开源项目",
+      duration: "2024-09 - ⾄今",
+      description: "基于 Next.js开发的个⼈简历应⽤，实现了⼀个简洁优雅的在线简历系统，⽀持⾃定义数据，响应式设计和⼀键部署。",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "React"
+      ],
+      responsibilities: [
+        
+      ]
+    },{
+      name: "PicImpact",
+      link: "https://pics.voidmu.com/",
+      company: "开源项目",
+      duration: "2024-09 - ⾄今",
+      description: "摄影作品展示⽹站，基于Next.js和Hono.js 开发。提供瀑布流相册展示，⽀持实况照⽚、原图查看、EXIF信息浏览和标签筛选功能，并兼容多种存储接⼝（S3 API/Cloudflare R2/AList API），⽀持多种环境（Vercel/Node.js/Docker/k8s）快速部署。",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "React",
+        "PostgreSQL",
+        "Docker"
+      ],
+      responsibilities: [
+        "Fork 并部署了开源项⽬ PicImpact，独⽴搭建完整的Node.js和Docker运⾏环境，配置PostgreSQL数据库，解决了本地项⽬版本升级过程中的数据迁移问题，确保系统平稳过渡并实现稳定运⾏。"
       ]
     }
   ],

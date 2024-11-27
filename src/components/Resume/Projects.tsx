@@ -1,5 +1,6 @@
 import React from 'react';
 import { Project } from '@/types/resume';
+import { ExternalLink } from 'lucide-react';
 
 interface ProjectsProps {
   projects: Project[];
@@ -14,6 +15,17 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <div key={index} className="border-b border-gray-200 pb-6 last:border-b-0">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-lg font-semibold text-gray-900">{project.name}</h3>
+              {project.link && (
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800"
+                    >
+                      <span className="break-all">{project.link}</span>
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
               <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-gray-600 text-sm">
                 <span>{project.company}</span>
                 <span className="hidden md:inline">|</span>
@@ -39,6 +51,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               </div>
             </div>
             
+            {project.responsibilities && project.responsibilities.length > 0 && (
             <div>
               <div className="font-medium text-gray-900 mb-2 text-sm md:text-base">个人职责：</div>
               <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700">
@@ -49,6 +62,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                 ))}
               </ul>
             </div>
+            )}
           </div>
         ))}
       </div>

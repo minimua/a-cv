@@ -43,6 +43,7 @@ export interface ResumeData {
     description: string;    // 项目描述
     technologies: string[]; // 技术栈
     responsibilities: string[]; // 个人职责
+    link?: string;  // 项目链接
   }
   
   export interface Education {
