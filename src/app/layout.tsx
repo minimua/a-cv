@@ -26,9 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
       >
         {children}
+        <footer className="text-center my-4">
+          <p className="text-gray-600 text-sm">
+            Powered by <a href="https://github.com/minimua/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">minimua</a>
+          </p>
+        </footer>
       </body>
     </html>
   );
