@@ -17,7 +17,7 @@ export default function Header({ basics }: HeaderProps) {
   };
 
   return (
-    <header className="pb-6">
+    <header className="pb-6 text-sm">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-8">
         {/* 左侧信息 */}
         <div className="text-center md:text-left">

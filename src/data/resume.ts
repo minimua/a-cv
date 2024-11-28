@@ -6,7 +6,7 @@ export const resumeData: ResumeData = {
     label: "Java开发工程师",
     email: "mujaaa@163.com",
     image: "/img/image.jpg",
-    phone: "15093063219",
+    phone: "150xxxxxxxx",
     location: "杭州",
     summary: "具有扎实的Java基础知识和丰富的微服务项目开发经验，熟练掌握Spring全家桶，对数据库、中间件等技术有深入了解，拥有良好的代码习惯和团队协作能力。",
     profiles: [ 
